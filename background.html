@@ -1,0 +1,11 @@
+﻿<script src="conf.js" type="text/javascript"></script>
+<script>
+// 后台运行，初始化一些变量
+(function () {
+    var recordCount = localStorage.getItem( KEY_RECORDCOUNT );
+    if ( !recordCount ) {
+        recordCount = '10';
+        localStorage.setItem( KEY_RECORDCOUNT, recordCount );
+    }
+})();
+</script>
